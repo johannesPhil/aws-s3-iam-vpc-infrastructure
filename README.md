@@ -280,6 +280,16 @@ All resources created are within **AWS Free Tier** limits:
 - VPC Flow Logs for network monitoring
 - AWS Config for compliance monitoring
 
+### Security Groups (Prepared for Future Deployment)
+
+**Note**: Security groups are created and configured but not currently attached to any resources. They are ready for EC2/RDS deployment.
+
+**When instances are deployed**:
+
+- App servers will use `cloudlaunch-app-sg`
+- Database servers will use `cloudlaunch-db-sg`
+- This provides layered security on top of subnet isolation
+
 ---
 
 ## Conclusion
